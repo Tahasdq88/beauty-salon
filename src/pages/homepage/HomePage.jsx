@@ -1,8 +1,9 @@
 import React from "react";
 import HeroSection from "../../components/home/HeroSection/HeroSection";
-import Services from "../../components/Home/Services/Services";
-import Quote from "../../components/Home/Quote/Quote";
-import Socialmedia from "../../components/Home/Socialmedia/Socialmedia";
+import Socialmedia from "../../components/home/Socialmedia/Socialmedia";
+import Services from "../../components/home/Services/Services";
+import Quote from "../../components/home/Quote/QuoteComponents";
+
 const HomePage = () => {
   return (
     <>
