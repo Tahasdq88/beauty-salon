@@ -1,0 +1,41 @@
+.quote-section {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #B68F82;
+}
+
+.quote-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    /* min-width: 360px; */
+}
+
+.quote-text {
+    font-size: 1.5rem;
+    color: white;
+    line-height: 1.4;
+    margin: 20px 0;
+    letter-spacing: 2px;
+    box-shadow: none;
+}
+
+.appointment-button {
+    text-transform: uppercase;
+    background-color: inherit;
+    color: #fff;
+    border: 0.5px solid white;
+    border-radius: 2px;
+    padding: 1rem 2rem;
+    margin: 20px 0; 
+    cursor: pointer;
+    transition: background-color 0.5s ease-in;
+    letter-spacing: 2px;
+    box-shadow: none;
+
+}
+
+.appointment-button:hover {
+    color: black;
+    background-color: white;
+}

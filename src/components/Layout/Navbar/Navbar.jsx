@@ -2,7 +2,6 @@
 import React, { useState } from "react";
 import "./navbar.css";
 import Sidebar from "./Sidebar";
-import logo from "../../../assets/images/logo.jpeg";
 import { Link } from "react-router-dom";
 function Navbar() {
   // Get the current URL pathname
@@ -20,7 +19,7 @@ function Navbar() {
     <nav className="navbar">
       <div className="navbar-logo">
         <Link to="/">
-          <img src={logo} alt="Moshi_SPA" />
+          <img src="/assets/images/logo.jpeg" alt="Moshi_SPA" />
         </Link>
       </div>
       <button
