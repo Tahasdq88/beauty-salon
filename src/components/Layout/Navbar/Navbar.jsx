@@ -1,14 +1,31 @@
 // Navbar.js
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./navbar.css";
 import Sidebar from "./Sidebar";
-import logo from "../../../assets/images/logo.jpeg";
 import { Link } from "react-router-dom";
 function Navbar() {
   // Get the current URL pathname
 
-  const [isMobileView, setisMobileView] = useState(false);
+  const [isMobileView, setisMobileView] = useState(window.innerWidth > 820);
   const [isNavOpen, setIsNavOpen] = useState(false);
+
+  useEffect(() => {
+    if (window.innerWidth > 820) {
+      setisMobileView(false);
+    } else {
+      setisMobileView(true);
+    }
+
+    const updateMedia = () => {
+      if (window.innerWidth > 820) {
+        setisMobileView(false);
+      } else {
+        setisMobileView(true);
+      }
+    };
+    window.addEventListener("resize", updateMedia);
+    return () => window.removeEventListener("resize", updateMedia);
+  }, []);
 
   const toggleSidebar = () => {
     setIsNavOpen(!isNavOpen);
@@ -20,7 +37,7 @@ function Navbar() {
     <nav className="navbar">
       <div className="navbar-logo">
         <Link to="/">
-          <img src={logo} alt="Moshi_SPA" />
+          <img src="/assets/images/logo.jpeg" alt="Moshi_SPA" />
         </Link>
       </div>
       <button

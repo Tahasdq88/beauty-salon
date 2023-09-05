@@ -6,7 +6,9 @@ import { Link } from "react-router-dom";
 
 const Sidebar = ({ isNavOpen, toggleSidebar }) => {
   const currentPath = window.location.pathname;
-
+  const onNavtabClick = () => {
+    toggleSidebar();
+  };
   return (
     <div className={`sidebar ${isNavOpen ? "open" : ""}`}>
       <div className="side-profile"></div>
@@ -19,7 +21,9 @@ const Sidebar = ({ isNavOpen, toggleSidebar }) => {
                 : "sidebarMenuList"
             }
           >
-            <Link to="/">Home</Link>
+            <Link onClick={onNavtabClick} to="/">
+              Home
+            </Link>
           </li>
           <li
             className={
@@ -28,7 +32,9 @@ const Sidebar = ({ isNavOpen, toggleSidebar }) => {
                 : "sidebarMenuList"
             }
           >
-            <Link to="/treatments">Treatments</Link>
+            <Link onClick={onNavtabClick} to="/treatments">
+              Treatments
+            </Link>
           </li>
           <li
             className={
@@ -37,7 +43,9 @@ const Sidebar = ({ isNavOpen, toggleSidebar }) => {
                 : "sidebarMenuList"
             }
           >
-            <Link to="/prices">Prices</Link>
+            <Link onClick={onNavtabClick} to="/prices">
+              Prices
+            </Link>
           </li>
           <li
             className={
@@ -46,7 +54,9 @@ const Sidebar = ({ isNavOpen, toggleSidebar }) => {
                 : "sidebarMenuList"
             }
           >
-            <Link to="/story">Our Story</Link>
+            <Link onClick={onNavtabClick} to="/story">
+              Our Story
+            </Link>
           </li>
           <li
             className={
@@ -55,7 +65,9 @@ const Sidebar = ({ isNavOpen, toggleSidebar }) => {
                 : "sidebarMenuList"
             }
           >
-            <Link to="/contact">Contact</Link>
+            <Link onClick={onNavtabClick} to="/contact">
+              Contact
+            </Link>
           </li>
           <li
             className={
@@ -64,7 +76,9 @@ const Sidebar = ({ isNavOpen, toggleSidebar }) => {
                 : "sidebarMenuList"
             }
           >
-            <Link to="/login">Login</Link>
+            <Link onClick={onNavtabClick} to="/login">
+              Login
+            </Link>
           </li>
         </ul>
       </div>

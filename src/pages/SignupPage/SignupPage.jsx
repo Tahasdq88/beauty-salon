@@ -1,11 +1,13 @@
 import React, { useState } from "react";
-import "./Loginpage.css"; // Import your CSS file
+import "./SignupPage.css"; // Import your CSS file
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
-const Loginpage = () => {
+const SignupPage = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
+  const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -16,16 +18,16 @@ const Loginpage = () => {
   };
 
   return (
-    <div className="login-container">
+    <div className="singup-container">
       <motion.div
-        className="login-form"
+        className="singup-form"
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
       >
-        <h2 className="login-header">Login</h2>
+        <h2 className="singup-header">Singup</h2>
         <form onSubmit={handleSubmit}>
-          <div className="form-group">
+          <div className="singup-form-group">
             <label htmlFor="username" className="form-label">
               Username:
             </label>
@@ -38,7 +40,33 @@ const Loginpage = () => {
               className="form-input"
             />
           </div>
-          <div className="form-group">
+          <div className="singup-form-group">
+            <label htmlFor="email" className="form-label">
+              Email:
+            </label>
+            <input
+              type="text"
+              id="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              required
+              className="form-input"
+            />
+          </div>
+          <div className="singup-form-group">
+            <label htmlFor="phone" className="form-label">
+              Phone:
+            </label>
+            <input
+              type="text"
+              id="phone"
+              value={phone}
+              onChange={(e) => setPhone(e.target.value)}
+              required
+              className="form-input"
+            />
+          </div>
+          <div className="singup-form-group">
             <label htmlFor="password" className="form-label">
               Password:
             </label>
@@ -51,12 +79,12 @@ const Loginpage = () => {
               className="form-input"
             />
           </div>
-          <button type="submit" className="login-button">
-            Login
+          <button type="submit" className="singup-button">
+            singup
           </button>
-          <div className="signup_para">
-            <p>Don't have an account ?</p>
-            <Link to="/Signup">Sign up</Link>
+          <div className="login_para">
+            <p>Already have an account ?</p>
+            <Link to="/Login">Login</Link>
           </div>
         </form>
       </motion.div>
@@ -64,4 +92,4 @@ const Loginpage = () => {
   );
 };
 
-export default Loginpage;
+export default SignupPage;

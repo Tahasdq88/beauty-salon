@@ -1,0 +1,76 @@
+/* Additional styling for improved aesthetics */
+
+.singup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(45deg, #638a73, #4bbe87);
+}
+
+.singup-form {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 30px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.singup-header {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+  font-family: cursive;
+  border-bottom: 3px solid #6ed28f;
+  display: inline;
+  padding: 2px;
+  margin: 4px;
+}
+
+.singup-form-group {
+  text-align: left;
+  margin-top: 30px;
+  margin: 10px 20px;
+}
+
+.form-label {
+  display: block;
+  font-size: 16px;
+  color: #555;
+}
+
+.form-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+input:focus {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.singup-button {
+  background-color: #557167;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.singup-button:hover {
+  background-color: #557167;
+}
+
+.login_para {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
