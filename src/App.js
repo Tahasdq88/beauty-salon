@@ -6,6 +6,7 @@ import Loginpage from "./pages/LoginPage/Loginpage";
 import SignupPage from "./pages/SignupPage/SignupPage";
 import Contact from "./pages/contact/Contact";
 import OurStory from "./pages/OurStory/OurStory";
+import PricePage from "./pages/Price/PricePage";
 
 function App() {
   return (
@@ -47,6 +48,14 @@ function App() {
         element={
           <Layout>
             <OurStory />
+          </Layout>
+        }
+      />
+      <Route
+        path="/prices"
+        element={
+          <Layout>
+            <PricePage />
           </Layout>
         }
       />
