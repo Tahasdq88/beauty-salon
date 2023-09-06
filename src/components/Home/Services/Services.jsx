@@ -1,17 +1,19 @@
 import React from "react";
 import "./Services.css";
 import Heading from "../../Heading/Heading";
+import { Link } from "react-router-dom";
 
 const Services = () => {
   const customStyle = {
     height: "100px",
   };
   const data = [
-    { id: 1, heading: "Facial", imageurl: "/assets/images/clay_mask.jpg" },
+    { id: 1, heading: "Facial", imageurl: "/assets/images/clay_mask.jpg" ,url: "treatments/facial"},
     {
       id: 2,
       heading: "Body Treatment",
       imageurl: "assets/images/facial_massage.jpg",
+      url: "treatments/body-treatment"
     },
   ];
 
@@ -35,11 +37,11 @@ const Services = () => {
         <div className="content-wrapper">
           {data.map((data) => (
             <div className="container ">
-              <a href="#">
+              <Link to={data.url}>
                 <span
                   style={{ backgroundImage: `url(${data.imageurl})` }}
                 ></span>
-              </a>
+              </Link>
               <div className="container-2">
                 <h3>{data.heading}</h3>
                 <div></div>

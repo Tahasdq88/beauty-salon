@@ -38,14 +38,18 @@
 .hero-content p {
   font-size: 14px;
   color: gray;
+  margin: 20px 0;
 }
 .hero-content button {
   font-size: 18px;
-  color: black;
-  background-color: #478b7c;
+  color: white;
+  background-color: #83ac9e;
   text-transform: uppercase;
   padding: 10px;
   cursor: pointer;
+  border: none;
+
+  /* margin-top: 50/px; */
 }
 .hero-content button:hover {
   background-color: #557167;
