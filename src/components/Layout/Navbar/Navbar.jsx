@@ -3,11 +3,14 @@ import React, { useEffect, useState } from "react";
 import "./navbar.css";
 import Sidebar from "./Sidebar";
 import { Link } from "react-router-dom";
+import { useAuth } from "../../../context/AuthContext";
+
 function Navbar() {
   // Get the current URL pathname
 
   const [isMobileView, setisMobileView] = useState(window.innerWidth > 820);
   const [isNavOpen, setIsNavOpen] = useState(false);
+  const { isAuthenticated, logout } = useAuth();
 
   //dropdown
   const [showTreatmentsDropdown, setShowTreatmentsDropdown] = useState(false);
@@ -32,7 +35,7 @@ function Navbar() {
     window.addEventListener("resize", updateMedia);
     return () => window.removeEventListener("resize", updateMedia);
   }, []);
-
+  useEffect(() => {}, []);
   const toggleSidebar = () => {
     setIsNavOpen(!isNavOpen);
     console.log(isNavOpen);
@@ -50,6 +53,10 @@ function Navbar() {
   };
 
   const currentPath = window.location.pathname;
+
+  const handleLogout = () => {
+    logout();
+  };
 
   return (
     <nav className="navbar">
@@ -122,12 +129,16 @@ function Navbar() {
             </Link>
           </li>
           <li>
-            <Link
-              to="/login"
-              className={currentPath === "/login" ? "active" : ""}
-            >
-              Login
-            </Link>
+            {isAuthenticated ? (
+              <Link onClick={handleLogout}>Logout</Link>
+            ) : (
+              <Link
+                to="/login"
+                className={currentPath === "/login" ? "active" : ""}
+              >
+                Login
+              </Link>
+            )}
           </li>
         </ul>
       </div>
