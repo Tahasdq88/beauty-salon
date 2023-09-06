@@ -81,6 +81,7 @@ function Navbar() {
               onMouseEnter={handleTreatmentsHover}
               // className={currentPath === "/treatments" ? "active" : ""}
               className="active"
+              // onMouseLeave={handleMouseLeave}
             >
               Treatments
             </Link>

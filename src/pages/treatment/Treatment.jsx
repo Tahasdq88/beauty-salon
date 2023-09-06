@@ -27,7 +27,7 @@ const Treatment = () => {
   return (
     <section>
       <div className="upper">
-        <div className="upper">
+        <div >
           {newdata.map((item) => (
             <div
               className="upper-image"

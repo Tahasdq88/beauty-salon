@@ -25,7 +25,7 @@ const SignupPage = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
       >
-        <h2 className="singup-header">Singup</h2>
+        <h2 className="singup-header">Sign Up</h2>
         <form onSubmit={handleSubmit}>
           <div className="singup-form-group">
             <label htmlFor="username" className="form-label">
@@ -80,7 +80,7 @@ const SignupPage = () => {
             />
           </div>
           <button type="submit" className="singup-button">
-            singup
+          Sign Up
           </button>
           <div className="login_para">
             <p>Already have an account ?</p>
