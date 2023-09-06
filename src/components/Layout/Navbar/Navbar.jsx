@@ -12,7 +12,8 @@ function Navbar() {
   //dropdown
   const [showTreatmentsDropdown, setShowTreatmentsDropdown] = useState(false);
   const [showFacialDropdown, setShowFacialDropdown] = useState(false);
-  const [showBodyTreatmentDropdown, setShowBodyTreatmentDropdown] = useState(false);
+  const [showBodyTreatmentDropdown, setShowBodyTreatmentDropdown] =
+    useState(false);
 
   useEffect(() => {
     if (window.innerWidth > 820) {
@@ -37,8 +38,7 @@ function Navbar() {
     console.log(isNavOpen);
   };
 
-
-  // drop down 
+  // drop down
   const handleTreatmentsHover = () => {
     setShowTreatmentsDropdown(true);
   };
@@ -69,32 +69,33 @@ function Navbar() {
       {/* side navbar */}
       <Sidebar isNavOpen={isNavOpen} toggleSidebar={toggleSidebar} />
 
-      <div className={`navbar-links ${isMobileView ? "d-none" : ""}` } onMouseLeave={handleMouseLeave}>
+      <div
+        className={`navbar-links ${isMobileView ? "d-none" : ""}`}
+        onMouseLeave={handleMouseLeave}
+      >
         <ul>
           <li>
             <Link to="/" className={currentPath === "/" ? "active" : ""}>
               Home
             </Link>
           </li>
-          <li className="dropdown-container" >
+          <li className="dropdown-container">
             <Link
               onMouseEnter={handleTreatmentsHover}
-              // className={currentPath === "/treatments" ? "active" : ""}
-              className="active"
-              // onMouseLeave={handleMouseLeave}
+              className={currentPath.includes("treatments") ? "active" : ""}
             >
               Treatments
             </Link>
             {showTreatmentsDropdown && (
-            <ul className="dropdown">
-              <li>
-                <Link to="/treatments/facial" >Facial</Link>
-              </li>
-              <li>
-                <Link to="/treatments/body-treatment" >Body Treatment</Link>
-              </li>
-            </ul>
-             )}   
+              <ul className="dropdown">
+                <li>
+                  <Link to="/treatments/facial">Facial</Link>
+                </li>
+                <li>
+                  <Link to="/treatments/body-treatment">Body Treatment</Link>
+                </li>
+              </ul>
+            )}
           </li>
           <li>
             <Link

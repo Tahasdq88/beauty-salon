@@ -7,6 +7,7 @@ import SignupPage from "./pages/SignupPage/SignupPage";
 import Contact from "./pages/contact/Contact";
 import OurStory from "./pages/OurStory/OurStory";
 import Treatment from "./pages/treatment/Treatment";
+import PricePage from "./pages/Price/PricePage";
 
 function App() {
   return (
@@ -51,14 +52,22 @@ function App() {
           </Layout>
         }
       />
-     
+
       <Route
-      path="/treatments/:id"
-      element={
-        <Layout>
-          <Treatment />
-        </Layout>
-      }
+        path="/treatments/:id"
+        element={
+          <Layout>
+            <Treatment />
+          </Layout>
+        }
+      />
+      <Route
+        path="/prices"
+        element={
+          <Layout>
+            <PricePage />
+          </Layout>
+        }
       />
     </Routes>
   );

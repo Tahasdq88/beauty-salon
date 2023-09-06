@@ -27,7 +27,6 @@
   width: 400px;
   height: 250px;
   padding: 20px;
-  
 }
 
 .hero-content h1 {
@@ -49,7 +48,7 @@
   padding: 10px;
   cursor: pointer;
   border: none;
-  
+
   /* margin-top: 50/px; */
 }
 .hero-content button:hover {
