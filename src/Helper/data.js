@@ -13,17 +13,17 @@ const data = [
     id: 3,
     name: "image3",
     
-    image: "/assets/images/facial_treatment.jpg"
+    image: "/assets/images/back_massage.jpg"
   },
   {
     id: 4,
     name: "image4",
-    image: "/assets/images/facial_cleaning.jpg"
+    image: "/assets/images/facial_pen.jpg"
   },
   {
     id: 5,
     name: "image5",
-    image: "/assets/images/Yoga.jpg"
+    image: "/assets/images/Spa Bath.jpg"
   },
   {
     id: 6,

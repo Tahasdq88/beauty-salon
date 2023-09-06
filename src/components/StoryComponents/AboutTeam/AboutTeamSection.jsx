@@ -12,7 +12,7 @@ const AboutTeamSection = () => {
         animate={{ opacity: 1, x: 0 }} // Animation when component mounts
         transition={{ duration: 1 }} // Animation duration
       >
-        <img src="/assets/images/hero.jpg" alt="about" />
+        <img src="/assets/images/facial_mask.jpg" alt="about" />
       </motion.div>
       <motion.div
         className="about-text-container"

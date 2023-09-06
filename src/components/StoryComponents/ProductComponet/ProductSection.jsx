@@ -4,23 +4,26 @@ import "./product.css";
 const ProductSection = () => {
   return (
     <div className="product-section">
+      
+      
+      
       <motion.div
         className="product-image"
-        initial={{ opacity: 0, x: -50 }}
+      initial={{ opacity: 0, x: 50 }}
         animate={{ opacity: 1, x: 0 }}
-        transition={{ duration: 1 }}
+        transition={{ duration: 2 }}
       >
         <img
-          src="/assets/images/hero.jpg"
+          src="/assets/images/madero_therapy.jpg"
           alt="Product Image"
           style={{ width: "100%", height: "100%" }}
         />
       </motion.div>
       <motion.div
         className="product-content"
-        initial={{ opacity: 0, x: 50 }}
+        initial={{ opacity: 0, x: -50 }}
         animate={{ opacity: 1, x: 0 }}
-        transition={{ duration: 1 }}
+        transition={{ duration: 2 }}
       >
         <h2>Our Products</h2>
         <p>

@@ -4,14 +4,16 @@ import "./SpaPolicy.css";
 const SpaPolicySection = () => {
   return (
     <div className="spa-section">
+      
+     
       <motion.div
         className="spa-image"
         initial={{ opacity: 0, x: -50 }}
         animate={{ opacity: 1, x: 0 }}
-        transition={{ duration: 1 }}
+        transition={{ duration: 2 }}
       >
         <img
-          src="/assets/images/hero.jpg"
+          src="/assets/images/facial_pen.jpg"
           alt="spa Image"
           style={{ width: "100%", height: "100%" }}
         />
@@ -20,7 +22,7 @@ const SpaPolicySection = () => {
         className="spa-content"
         initial={{ opacity: 0, x: 50 }}
         animate={{ opacity: 1, x: 0 }}
-        transition={{ duration: 1 }}
+        transition={{ duration: 2 }}
       >
         <h2>SPA policy</h2>
         <p>

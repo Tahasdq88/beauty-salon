@@ -18,7 +18,7 @@ const Contact = () => {
     <>
       <div className="contact-page">
         <div className="left-image">
-          <img src="/assets/images/hero.jpg" alt="Left Image" />
+          <img src="/assets/images/Spa Bath.jpg" alt="Left Image" />
         </div>
         <div className="contact-info">
           <h2>Contact Us</h2>
@@ -46,7 +46,7 @@ const Contact = () => {
           </p>
         </div>
         <div className="right-image">
-          <img src="/assets/images/hero.jpg" alt="Right Image" />
+          <img src="/assets/images/hot_stone_massage.jpg" alt="Right Image" />
         </div>
       </div>
       <div className="contact-form-container">

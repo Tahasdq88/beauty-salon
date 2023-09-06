@@ -5,7 +5,14 @@
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: linear-gradient(45deg, #638a73, #4bbe87);
+  /* background: linear-gradient(45deg, #638a73, #4bbe87); */
+background-image:url("/public/assets/images/Thai\ massage.jpg") ;
+  background-position-x: left;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: left center; /* Move the background image to the left */
+  background-repeat: no-repeat; 
 }
 
 .login-form {
@@ -20,7 +27,7 @@
   font-size: 24px;
   margin-bottom: 20px;
   color: #333;
-  font-family: cursive;
+  font-family: inherit;
   border-bottom: 3px solid #6ed28f;
   display: inline;
   padding: 2px;

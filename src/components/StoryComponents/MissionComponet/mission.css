@@ -50,5 +50,10 @@
     flex-direction: column-reverse;
     height: 90vh;
     margin-top: 20px;
+    flex: none;
   }
+  .mission-text-container{
+    flex: none;
+  }
+  
 }
