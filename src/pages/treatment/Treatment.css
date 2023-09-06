@@ -101,7 +101,8 @@
   }
   
   .tab:hover {
-    background-color: ; /* Background color for hovered tab */
+    opacity: 0.5;
+    background-color:#478b7c ;
     color: #fff; /* Text color for hovered tab */
     border: 1px solid #478b7c; /* Border for hovered tab */
   }

@@ -1,6 +1,5 @@
 .heading {
     margin-top: 20px;
-
     width: 100%;
     font-size: 2em;
     display: flex;
@@ -13,9 +12,9 @@
     /* font-family: Helvetica, sans-serif; */
 }
 .heading >div{
-    color: #4e635f;
+    color: #478b7c;
     line-height: 2px;
-    border: 0.5px solid  #B68F82;
+    border: 0.5px solid  #478b7c;
     /* line-height: 25.2px; */
     margin: 40px;
     flex-grow :1;
