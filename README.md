@@ -4,6 +4,7 @@
 
 Introducing SPA Moshi: a React.js-powered multi Pages Application that combines sleek design, dynamic content, and user engagement for a seamless Moshi experience. Explore our responsive site, personalized user accounts, and efficient content management, all optimized for performance and discoverability. Welcome to Moshi's digital realm of innovation and aesthetics.
 
+<img width="150" src="assets/imges/logo.jpeg" alt="Preview of Homepage with search results" title="Preview of Homepage"/>
 **1.1 What does the project do?**
 
 SPA Moshi is your ultimate destination for relaxation and rejuvenation through luxurious body treatments and massage therapy. Our website, powered by React.js, is designed to provide a seamless booking experience for those seeking a soothing escape from the daily grind. We offer a range of exquisite body treatments and massage options, all easily accessible through our user-friendly interface. Whether you're in search of a tranquil spa day or a therapeutic massage session, SPA Moshi has you covered. Explore our services, check availability, and book your appointment effortlessly, all while enjoying a visually appealing and responsive online environment.

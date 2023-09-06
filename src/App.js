@@ -8,8 +8,10 @@ import Contact from "./pages/contact/Contact";
 import OurStory from "./pages/OurStory/OurStory";
 import Treatment from "./pages/treatment/Treatment";
 import PricePage from "./pages/Price/PricePage";
+import { useAuth } from "./context/AuthContext";
 
 function App() {
+  const { isAuthenticated } = useAuth();
   return (
     <Routes>
       <Route
@@ -20,22 +22,26 @@ function App() {
           </Layout>
         }
       />
-      <Route
-        path="/login"
-        element={
-          <Layout>
-            <Loginpage />
-          </Layout>
-        }
-      />
-      <Route
-        path="/Signup"
-        element={
-          <Layout>
-            <SignupPage />
-          </Layout>
-        }
-      />
+      {!isAuthenticated && (
+        <Route
+          path="/login"
+          element={
+            <Layout>
+              <Loginpage />
+            </Layout>
+          }
+        />
+      )}
+      {!isAuthenticated && (
+        <Route
+          path="/Signup"
+          element={
+            <Layout>
+              <SignupPage />
+            </Layout>
+          }
+        />
+      )}
       <Route
         path="/contact"
         element={
@@ -66,6 +72,14 @@ function App() {
         element={
           <Layout>
             <PricePage />
+          </Layout>
+        }
+      />
+      <Route
+        path="*"
+        element={
+          <Layout>
+            <HomePage />
           </Layout>
         }
       />

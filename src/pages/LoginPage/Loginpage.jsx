@@ -2,17 +2,17 @@ import React, { useState } from "react";
 import "./Loginpage.css"; // Import your CSS file
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import { useAuth } from "../../context/AuthContext";
+import { ClipLoader } from "react-spinners";
 
 const Loginpage = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
-
+  const { login, loading, isAuthenticated } = useAuth();
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Here, you can implement your authentication logic.
-    // For simplicity, we'll just display the submitted values for now.
-    console.log("Username:", username);
-    console.log("Password:", password);
+    login(username, password);
+    console.log(isAuthenticated);
   };
 
   return (
@@ -27,10 +27,10 @@ const Loginpage = () => {
         <form onSubmit={handleSubmit}>
           <div className="form-group">
             <label htmlFor="username" className="form-label">
-              Username:
+              Email:
             </label>
             <input
-              type="text"
+              type="email"
               id="username"
               value={username}
               onChange={(e) => setUsername(e.target.value)}
@@ -52,7 +52,17 @@ const Loginpage = () => {
             />
           </div>
           <button type="submit" className="login-button">
-            Login
+            {loading ? (
+              <ClipLoader
+                color="white"
+                loading={loading}
+                size={20}
+                aria-label="Loading Spinner"
+                data-testid="loader"
+              />
+            ) : (
+              "Login"
+            )}
           </button>
           <div className="signup_para">
             <p>Don't have an account ?</p>

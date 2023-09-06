@@ -67,8 +67,10 @@ input:focus {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  width: 100px;
+  height: 40px;
   transition: background-color 0.3s;
-  margin :20px 0;
+  margin: 20px 0;
 }
 
 .singup-button:hover {

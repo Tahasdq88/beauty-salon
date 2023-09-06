@@ -2,19 +2,19 @@ import React, { useState } from "react";
 import "./SignupPage.css"; // Import your CSS file
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import { useAuth } from "../../context/AuthContext";
+import ClipLoader from "react-spinners/ClipLoader";
 
 const SignupPage = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
+  const { signup, loading, error } = useAuth();
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Here, you can implement your authentication logic.
-    // For simplicity, we'll just display the submitted values for now.
-    console.log("Username:", username);
-    console.log("Password:", password);
+    signup(email, password);
   };
 
   return (
@@ -80,7 +80,17 @@ const SignupPage = () => {
             />
           </div>
           <button type="submit" className="singup-button">
-          Sign Up
+            {loading ? (
+              <ClipLoader
+                color="white"
+                loading={loading}
+                size={20}
+                aria-label="Loading Spinner"
+                data-testid="loader"
+              />
+            ) : (
+              "Sign Up"
+            )}
           </button>
           <div className="login_para">
             <p>Already have an account ?</p>
