@@ -1,7 +1,7 @@
 import React from "react";
 import './Footer.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faFacebookF,faInstagram, faYelp } from '@fortawesome/free-brands-svg-icons'
+import { faFacebookF,faInstagram, faTiktok } from '@fortawesome/free-brands-svg-icons'
 const Footer = () => {
   return <footer id="footer">
     <div className="footer-wrapper">
@@ -16,7 +16,7 @@ const Footer = () => {
         </ul>
       </div>
       <div className="footer-address">
-        <p>3104 University Ave., San Diego CA 92104   |   (619) 458-9088   |</p>
+        <p>Erasmustraat 888, 3000 FS Utrecht| (070) 456 789</p>
       </div>
       <div className="social-links">
         <a href="#" target="_blank">
@@ -26,7 +26,7 @@ const Footer = () => {
         <FontAwesomeIcon icon={faFacebookF} size="xl"/>
         </a>
         <a href="#" target="_blank">
-        <FontAwesomeIcon icon={faYelp} size="xl" />
+        <FontAwesomeIcon icon={faTiktok} size="xl" />
         </a>
       </div>
     </div>

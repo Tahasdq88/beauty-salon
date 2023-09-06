@@ -16,8 +16,7 @@
   flex: 2;
   padding: 0px 60px;
   text-align: left;
-  background-color: #fff; /* White background */
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  background-color: inherit; /* White background */
   margin-right: 10px;
   height: 100%;
   display: flex;
@@ -65,6 +64,12 @@
   }
   .spa-content {
     margin: 0;
-    padding: 0px 20px;
+    /* padding: 0px 20px; */
+    padding: 0;
+    margin-bottom: 30px;
+  }
+  .spa-image{
+    flex: auto;
   }
 }
+

@@ -11,7 +11,7 @@ const MissionComponent = () => {
         animate={{ opacity: 1, x: 0 }} // Animation when component mounts
         transition={{ duration: 1 }} // Animation duration
       >
-        <img src="/assets/images/hero.jpg" alt="Mission" />
+        <img src="/assets/images/girl_background.jpg" alt="Mission" />
       </motion.div>
       <motion.div
         className="mission-text-container"
