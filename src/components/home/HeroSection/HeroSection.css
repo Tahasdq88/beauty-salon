@@ -1,7 +1,7 @@
 /* Hero.css */
 .hero {
   position: relative;
-  background-image: url("../../../../public/assets/images/Thai\ massage.jpg");
+  background-image: url("../../../../public/assets/images/hero.jpg");
   background-size: cover;
   background-position: center;
   height: 80vh; /* Adjust the height as needed */

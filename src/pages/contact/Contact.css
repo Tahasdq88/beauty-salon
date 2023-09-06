@@ -135,12 +135,12 @@ button:hover {
   }
   .contact-form-container {
     max-width: 90%;
-    margin-top: 200px;
+    margin-top: 700px;
   }
   .name-group {
     display: block;
   }
   .name-input {
-    width: 100%; /* Adjust as needed */
+    width: 100%; 
   }
 }

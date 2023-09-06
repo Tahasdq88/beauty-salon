@@ -15,7 +15,7 @@ const facialData = [
     {
       id: 2,
       name: "body-treatment",
-      heading: "Mango Body Polish      ",
+      heading: "Body Treatment",
       image:'/assets/images/back_massage.jpg',
       desc:
         "This spa delight is a delicious fragrant treatment inspired by the fruit of the tropics. Soften and detoxify skin with a warm coconut oil massage followed by a tantalizing exfoliating mango sugar scrub that removes dry flaky skin leaving you rejuvenated with a pure tropical glow.",

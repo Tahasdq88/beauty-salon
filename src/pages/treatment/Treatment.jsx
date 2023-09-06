@@ -34,7 +34,7 @@ const Treatment = () => {
               style={{ backgroundImage: `url(${item?.image})` }}
             >
               <div className="upper-text">
-                <h2>{item.name}</h2>
+                <h2>{item.heading}</h2>
               </div>
             </div>
           ))}

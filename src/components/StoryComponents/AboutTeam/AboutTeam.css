@@ -55,4 +55,13 @@
     margin-bottom: 20px;
 
   }
+  .about-image-container {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+    height: 60%;
+    width: 100%;
+    animation: fade-in 1s ease-in-out;
+  }
+  
 }
