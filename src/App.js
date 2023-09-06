@@ -6,6 +6,7 @@ import Loginpage from "./pages/LoginPage/Loginpage";
 import SignupPage from "./pages/SignupPage/SignupPage";
 import Contact from "./pages/contact/Contact";
 import OurStory from "./pages/OurStory/OurStory";
+import Treatment from "./pages/treatment/Treatment";
 
 function App() {
   return (
@@ -49,6 +50,15 @@ function App() {
             <OurStory />
           </Layout>
         }
+      />
+     
+      <Route
+      path="/treatments/:id"
+      element={
+        <Layout>
+          <Treatment />
+        </Layout>
+      }
       />
     </Routes>
   );

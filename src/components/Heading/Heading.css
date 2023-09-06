@@ -9,14 +9,16 @@
     height: 200px;
     font-weight: 300;
     color: #4e635f;
+    
     /* font-family: Helvetica, sans-serif; */
 }
 .heading >div{
+    color: #4e635f;
     line-height: 2px;
     border: 0.5px solid  #B68F82;
-    width: 33.33%;
     /* line-height: 25.2px; */
-    margin: 40px
+    margin: 40px;
+    flex-grow :1;
 
 }
 @media (max-width: 768px) {

@@ -1,0 +1,123 @@
+.upper{
+    height: 100vh;
+    width: 100%;
+    color: white;
+}
+.upper-image{
+    width: 100%;
+    height: 100vh;
+    /* background-image: url(/public/assets/images/facial_pen.jpg); */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.upper-text { 
+    letter-spacing: 5px;
+    font-size: 3rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/* middle start */
+.middle-links{
+    margin-top: 50px;
+    width: 100%;
+    height: 50px;
+    justify-content: center;
+    display: flex;
+}
+.middle-links-wrapper {
+    margin: 0px 50px;
+}
+.middle-links>div{
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* width: 33.33%; */
+    width: 50%;
+    /* border: 2px solid red; */
+        cursor: pointer;
+
+}
+.middle-links >div>a>h4{ 
+    /* border: 2px solid red; */
+    height: 100%;    
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.middle-links a{
+    text-decoration: none;
+    color: black;
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.middle-links a ::after{
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: #557167;
+    transition: width 0.3s ease;
+}
+.middle-links a:active{
+    color: #557167;
+}
+.middle-section{
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+}
+.middle-section p{
+    letter-spacing: 1px;
+    line-height: 30px;
+}
+
+/* Tab styling */
+
+.middle-links {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f0f0f0; /* Background color for the tab container */
+  }
+.tab {
+    cursor: pointer;
+    padding: 10px 20px;
+    background-color: #e0e0e0; /* Background color for inactive tabs */
+    border: 1px solid #ccc; /* Border for inactive tabs */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+    text-align: center;
+    width: 100%;
+  }
+  
+  .tab:hover {
+    background-color: ; /* Background color for hovered tab */
+    color: #fff; /* Text color for hovered tab */
+    border: 1px solid #478b7c; /* Border for hovered tab */
+  }
+  
+  .active-tab {
+    cursor: pointer;
+    padding: 10px 20px;
+    background-color:#478b7c; /* Background color for active tab */
+    color: #fff; /* Text color for active tab */
+    border: 1px solid #478b7c ; /* Border for active tab */
+    transition: transform 0.2s ease-in-out; /* Animation for active tab */
+    width: 100%;
+    text-align: center;
+  }
+  
+  .active-tab:hover {
+    transform: scale(1.05); /* Scale up the active tab on hover */
+  }
+  

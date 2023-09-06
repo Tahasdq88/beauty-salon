@@ -5,7 +5,7 @@
   align-items: center;
   background-color: white; /* Adjust the background color as needed */
   color: white; /* Adjust the text color as needed */
-  padding: 10px 0; /* Adjust padding as needed */
+  /* padding: 10px 0;    */
   position: fixed;
   top: 0;
   left: 0;
@@ -42,13 +42,15 @@
   margin-right: 30px;
 }
 
-.navbar-links a {
+.navbar-links>ul>li> a {
   color: rgb(0, 5, 20);
   text-decoration: none;
   font-size: 18px;
   text-transform: uppercase;
   font-weight: 100;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: block;
+  padding: 50px 0;
 }
 
 .menu-button {
@@ -170,4 +172,32 @@
   .menu-button {
     margin-right: 20px;
   }
+}
+
+
+/* drop down styling */
+
+.dropdown {
+  /* display: none; Hide the dropdown by default */
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 100%; /* Position it below the parent element */
+  background-color: #fff; /* Background color for the dropdown */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow */
+}
+
+.dropdown li {
+  padding: 10px;
+  list-style: none;
+}
+
+.dropdown li a {
+  text-decoration: none;
+  color: #333; /* Link color for the dropdown items */
+}
+
+/* Show the dropdown when its parent is hovered */
+.dropdown-container:hover .dropdown {
+  display: block;
 }
