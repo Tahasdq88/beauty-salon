@@ -13,6 +13,8 @@ const Loginpage = () => {
     e.preventDefault();
     login(username, password);
     console.log(isAuthenticated);
+    setUsername('')
+    setPassword('')
   };
 
   return (

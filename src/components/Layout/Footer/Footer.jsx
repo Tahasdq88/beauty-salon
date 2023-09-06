@@ -16,7 +16,7 @@ const Footer = () => {
         </ul>
       </div>
       <div className="footer-address">
-        <p>Erasmustraat 888, 3000 FS Utrecht| (070) 456 789</p>
+        <p>Erasmustraat 888, 3000 FS Utrecht | (070) 456 789</p>
       </div>
       <div className="social-links">
         <a href="#" target="_blank">

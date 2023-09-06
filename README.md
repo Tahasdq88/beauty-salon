@@ -41,7 +41,20 @@ In this context, SPA Moshi's website is not just a digital showcase but also a p
     New users can sign up to gain access to personalized features like booking appointments and viewing their booking history.
     Returning users can log in to manage their profiles, bookings, and preferences.
 
-**1.3 Preview of the homepage with search result**
+
+ 
+**1.3 Backend Part**
+  - In this projext firebase is used for signin, signup and authentication apis. Firebase authentication into your application is a crucial step towards securing user data and providing a seamless login and signup experience.  Read on to learn how to harness the power of Firebase for seamless user authentication in your project.
+  Create a Firebase Account
+    - Create a Firebase Project
+    - Set Up Firebase Authentication
+    - Set Up Firebase Hosting (Optional)
+    - Integrate Firebase SDK
+    - Configure Firebase
+    - Test Firebase Authentication
+    - Testing and Deployment
+    - Security Rules
+    - Monitor and Scale
 
 ## 2.0 Installation and Requirements
 
@@ -68,23 +81,27 @@ All the dependencies are mentioned in the package.json file. Install them all at
 
 _The following dependencies, with the minimum version mentioned, are used:_
 
-- "@testing-library/jest-dom": "^5.16.4"
-- "@testing-library/react": "^13.3.0"
-- "@testing-library/user-event": "^13.5.0"
-- "axios": "^0.27.2"
-- "file-saver": "^2.0.5"
-- "html2canvas": "^1.4.1"
-- "jspdf": "^2.5.1"
-- "jwt-decode": "^3.1.2"
-- "react": "^18.2.0"
-- "react-copy-to-clipboard": "^5.1.0"
-- "react-dom": "^18.2.0"
-- "react-hook-form": "^7.34.0"
-- "react-router-dom": "^5.3.3"
-- "react-scripts": "5.0.1"
-- "web-vitals": "^2.1.4"
+- "@fortawesome/fontawesome-svg-core": "^6.4.2",
+-    "@fortawesome/free-brands-svg-icons": "^6.4.2",
+-    "@fortawesome/free-solid-svg-icons": "^6.4.2",
+-    "@fortawesome/react-fontawesome": "^0.2.0",
+-    "@testing-library/jest-dom": "^5.17.0",
+-    "@testing-library/react": "^13.4.0",
+-    "@testing-library/user-event": "^13.5.0",
+-    "axios": "^1.5.0",
+-    "firebase": "^10.3.1",
+-    "framer-motion": "^10.16.3",
+-    "react": "^18.2.0",
+-    "react-dom": "^18.2.0",
+-    "react-icons": "^4.10.1",
+-    "react-intersection-observer": "^9.5.2",
+-    "react-router-dom": "^6.15.0",
+-    "react-scripts": "5.0.1",
+-    "react-spinners": "^0.13.8",
+-    "react-toastify": "^9.1.3",
+-    "web-vitals": "^2.1.4"
 
-`REACT_APP_API_KEY=PlaceYourApiKeyHere`
+
 
 **Step 5: Running and testing the project locally**  
 To run the project locally and test all the functions, run the following command on the command line:

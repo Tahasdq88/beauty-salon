@@ -15,6 +15,10 @@ const SignupPage = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     signup(email, password);
+    setEmail('')
+    setPassword('')
+    setPhone('')
+    setUsername('')
   };
 
   return (
