@@ -78,7 +78,6 @@ function Navbar() {
 
       <div
         className={`navbar-links ${isMobileView ? "d-none" : ""}`}
-        onMouseLeave={handleMouseLeave}
       >
         <ul>
           <li>
@@ -86,23 +85,24 @@ function Navbar() {
               Home
             </Link>
           </li>
-          <li className="dropdown-container">
+          <li className="dropdown-container"  onMouseLeave={handleMouseLeave}>
             <Link
               onMouseEnter={handleTreatmentsHover}
+             
               className={currentPath.includes("treatments") ? "active" : ""}
             >
               Treatments
             </Link>
             {showTreatmentsDropdown && (
-              <ul className="dropdown">
+              <ul className={`dropdown ${showTreatmentsDropdown ? 'show' : ''}`}>
                 <li>
-                  <Link to="/treatments/facial">Facial</Link>
+                  <Link to="/treatments/facial">FACIAL</Link>
                 </li>
                 <li>
-                  <Link to="/treatments/body-treatment">Body Treatment</Link>
+                  <Link to="/treatments/body-treatment">BODY TREATMENT</Link>
                 </li>
               </ul>
-            )}
+             )}
           </li>
           <li>
             <Link
