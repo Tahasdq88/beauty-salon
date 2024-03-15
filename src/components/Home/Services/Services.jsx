@@ -1,6 +1,6 @@
 import React from "react";
 import "./Services.css";
-import Heading from "../../Heading/Heading";
+import Heading from "../../Heading/Heading.jsx";
 import { Link } from "react-router-dom";
 
 const Services = () => {

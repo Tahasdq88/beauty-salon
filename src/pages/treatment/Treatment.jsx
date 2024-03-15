@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./Treatment.css";
-import Heading from "../../components/Heading/Heading";
+import Heading from "../../components/Heading/Heading.jsx";
 import { useParams } from "react-router-dom";
 import data from "../../Helper/treatmentdata";
 import { motion } from "framer-motion";

@@ -1,7 +1,7 @@
 import React from "react";
 import "./Socialmedia.css";
 import instagramData from "../../../Helper/data.js";
-import Heading from "../../Heading/Heading";
+import Heading from "../../Heading/Heading.jsx";
 const Socialmedia = () => {
   // console.log("the data is " , instagramData)
   return (

@@ -1,6 +1,6 @@
 import React from "react";
 import "./Pricepage.css"; // Import your CSS file
-import Heading from "../../components/Heading/Heading";
+import Heading from "../../components/Heading/Heading.jsx";
 import { Link } from "react-router-dom";
 
 function PricePage() {
